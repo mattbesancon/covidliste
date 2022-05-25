@@ -6,7 +6,7 @@ rails new APP_NAME
 
 ## Setup
 
-Ensure you have bootstrap and it's dependencies
+Ensure you have bootstrap and its dependencies
 
 ```bash
 yarn add bootstrap
