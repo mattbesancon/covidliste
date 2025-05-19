@@ -1,1133 +1,1974 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-  <title>Une question sur Covidliste ?</title>
-<meta name="description" content="Toutes vos réponses dans notre foire aux questions."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="http://localhost:3000/faq.html"/>
-<meta property="og:title" content="Une question sur Covidliste ?"/>
-<meta property="og:description" content="Toutes vos réponses dans notre foire aux questions."/>
-<meta property="og:image" content="http://localhost:3000/assets/meta/faq-c351669bad04368e8acecd6d5d5b5deaa0f0608e695befe5d3c502649966464d.png"/>
-<meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:url" content="http://localhost:3000/faq.html"/>
-<meta property="twitter:title" content="Une question sur Covidliste ?"/>
-<meta property="twitter:description" content="Toutes vos réponses dans notre foire aux questions."/>
-<meta property="twitter:image" content="http://localhost:3000/assets/meta/faq-c351669bad04368e8acecd6d5d5b5deaa0f0608e695befe5d3c502649966464d.png"/>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <title>Une question sur Covidliste ?</title>
+    <meta
+      name="description"
+      content="Toutes vos réponses dans notre foire aux questions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:3000/faq.html" />
+    <meta property="og:title" content="Une question sur Covidliste ?" />
+    <meta
+      property="og:description"
+      content="Toutes vos réponses dans notre foire aux questions."
+    />
+    <meta
+      property="og:image"
+      content="http://localhost:3000/assets/meta/faq-c351669bad04368e8acecd6d5d5b5deaa0f0608e695befe5d3c502649966464d.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://localhost:3000/faq.html" />
+    <meta property="twitter:title" content="Une question sur Covidliste ?" />
+    <meta
+      property="twitter:description"
+      content="Toutes vos réponses dans notre foire aux questions."
+    />
+    <meta
+      property="twitter:image"
+      content="http://localhost:3000/assets/meta/faq-c351669bad04368e8acecd6d5d5b5deaa0f0608e695befe5d3c502649966464d.png"
+    />
 
-  <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="eIOzkZMoPpOMc4dR8VL9GcKU1vKf6a6yQbQRbUxT0YuNHwqE5XotTXvQCaabkwHU7_UP7ovGryEJcuc6bJXRDA" />
-  
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  
-  <meta content="index;follow" name="robots"/>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta
+      name="csrf-token"
+      content="eIOzkZMoPpOMc4dR8VL9GcKU1vKf6a6yQbQRbUxT0YuNHwqE5XotTXvQCaabkwHU7_UP7ovGryEJcuc6bJXRDA"
+    />
 
-  <link rel="stylesheet" media="all" href="/assets/application-579affec893eed8cb81739e62c74f5e2d0d6bddf4460195e120da8d045e9af9c.css" data-turbolinks-track="reload" />
-  <script src="/packs/js/application-985e65316d409d1cd5d3.js" data-turbolinks-track="reload" defer="defer" nonce="bWQSLtLxkRW9tRHX1BuUAg=="></script>
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+
+    <meta content="index;follow" name="robots" />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      href="/assets/application-579affec893eed8cb81739e62c74f5e2d0d6bddf4460195e120da8d045e9af9c.css"
+      data-turbolinks-track="reload"
+    />
+    <script
+      src="/packs/js/application-985e65316d409d1cd5d3.js"
+      data-turbolinks-track="reload"
+      defer="defer"
+      nonce="bWQSLtLxkRW9tRHX1BuUAg=="
+    ></script>
     <style>
-      img:not([alt]), img[alt=""] {
-          border: 5px dashed red;
+      img:not([alt]),
+      img[alt=""] {
+        border: 5px dashed red;
       }
-  </style>
-
-</head>
-<body>
-<div class="layout">
-  <div class="layout__above-footer">
-    <!-- banner model to render in application layout if needed -->
-<div class="bg-light">
-  <div class="container py-2">
-    <div class="d-flex align-items-center justify-content-center flex-column flex-md-row font-weight-light text-center">
-      <span>La tension vaccinale est réduite : Covidliste est en pause 👋.</span>
-      <a target="_blank" class="text-decoration-underline text-primary mt-1 mt-md-0 ml-md-2" href="https://twitter.com/covidliste/">
-        Suivez-nous sur Twitter<i class="fas fa-chevron-right ml-2"></i>
-</a>    </div>
-  </div>
-</div>
-
-    
-    <nav class="navbar navbar-expand-xl px-lg-0 navbar-dark bg-theme">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <img height="40" width="32" loading="lazy" class="mr-2" alt="logo covidliste" src="/assets/covidliste-logo-1c771fa067965c5624376f9c3064eb6a1a08b3c0a91c36413747aaafba6d0b00.svg" />
-      <span class="font-weight-bolder">Covidliste</span>
-</a>
-    <button class="navbar-toggler" type="button" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarNavDropdown" data-toggle="collapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/faq.html">Foire aux questions</a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pro.html">Professionnels de santé</a>
-          </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#dropdownHelpers" role="button" aria-haspopup="true" aria-expanded="false">Ils nous aident</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownHelpers">
-            <a class="dropdown-item" href="/donateurs.html">Donateurs</a>
-            <a class="dropdown-item" href="/sponsors.html">Sponsors</a>
-            <a class="dropdown-item" href="/benevoles.html">Bénévoles</a>
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="layout__above-footer">
+        <!-- banner model to render in application layout if needed -->
+        <div class="bg-light">
+          <div class="container py-2">
+            <div
+              class="d-flex align-items-center justify-content-center flex-column flex-md-row font-weight-light text-center"
+            >
+              <span
+                >La tension vaccinale est réduite : Covidliste est en pause
+                👋.</span
+              >
+              <a
+                target="_blank"
+                class="text-decoration-underline text-primary mt-1 mt-md-0 ml-md-2"
+                href="https://twitter.com/covidliste/"
+              >
+                Suivez-nous sur Twitter<i class="fas fa-chevron-right ml-2"></i>
+              </a>
+            </div>
           </div>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div class="layout__content ">
-      
-      
-
-
-
-
-<div class="container" id="faq">
-  <div class="d-flex align-items-center mb-4">
-    <div class="rounded p-3 bg-light text-primary mr-3 h2">
-      <i class="fas fa-user-plus"></i>
-    </div>
-    <h3>
-      Foire aux questions
-    </h3>
-  </div>
-
-  <p>
-    Vous trouverez sur cette page un ensemble de réponses aux questions les plus posées,
-    regroupées par thème.
-  </p>
-
-  <p class="mb-4">
-    Si vous êtes un professionnel de santé assurant la vaccination, consultez la
-    <a class="text-decoration-underline" href="/partenaires/faq.html">foire aux questions pour les professionnels de santé</a>.
-  </p>
-
-  <div id="fuzzy-search" data-fuzzy-search-source="/faq.json" data-fuzzy-search-input="#search" data-fuzzy-search-none="#no-results" data-fuzzy-search-item-category=".faq-category" data-fuzzy-search-item=".faq-item" data-fuzzy-search-item-title=".faq-item--title">
-    <input type="search" name="search" id="search" placeholder="Saisissez un mot-clé pour trouver votre réponse" class="form-control string required" autocomplete="off" />
-    <div id="no-results" class="d-none alert alert-warning mt-2">Nous n’avons pas trouvé de réponse avec ces mots clefs, merci de reformuler votre demande.</div>
-    <div id="accordion" class="d-flex flex-column">
-        <h2 class="mt-5 mb-2 h4">Inscription</h2>
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe"
-            aria-expanded="false"
-            aria-controls="collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe">
-      Je n’ai pas reçu d’email de confirmation ou de changement de mot de passe.
-    </button>
-  </h3>
-
-  <div id="collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe"
-       data-parent="#accordion">
-    <p>Vérifiez que le mail n’est pas présent dans vos courriers indésirables, ou boîte <em>SPAM</em>.</p>
-
-<p>S’il n’est pas présent, vous pouvez faire une nouvelle demande
-<a href="/users/confirmation/new.html">d’email de confirmation</a>.</p>
-
-<p>Attendez quelques minutes, vérifiez vos courriers indésirables ou boîte <em>SPAM</em>.</p>
-
-<p>Certains fournisseurs de mail peuvent parfois mettre en attente pendant plusieurs
-heures les emails  nvoyés par Covidliste avant de les rendre disponibles dans votre boite.
-C’est le cas notemment de Yahoo et de Hotmail.</p>
-
-<p>Si vous souhaitez que le mail arrive plus rapidement, nous vous conseillons
-d’éviter l’utilisation des adresses de ces fournisseurs pour vous inscrire.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-peut-on-s-inscrire-a-deux-ou-plus"
-            aria-expanded="false"
-            aria-controls="collapse-peut-on-s-inscrire-a-deux-ou-plus">
-      Peut-on s’inscrire à deux (ou plus) ?
-    </button>
-  </h3>
-
-  <div id="collapse-peut-on-s-inscrire-a-deux-ou-plus"
-       class="collapse p-3"
-       aria-labelledby="collapse-peut-on-s-inscrire-a-deux-ou-plus"
-       data-parent="#accordion">
-    <p>Oui ! Chacun doit alors utiliser sa propre adresse email pour s’inscrire.</p>
-
-<p>À ce jour, Covidliste n’autorise qu’une inscription par adresse e-mail.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire"
-            aria-expanded="false"
-            aria-controls="collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire">
-      Je ne suis pas prioritaire ou pas éligible au vaccin, puis-je tout de même m’inscrire ?
-    </button>
-  </h3>
-
-  <div id="collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire"
-       data-parent="#accordion">
-    <p>Oui !
-Covidliste est un outil d’ajustement de l’offre et de la demande qui a pour
-objectif d’éviter de perdre des doses de vaccins.</p>
-
-<p>Les centres pourront vous contacter même si vous n’êtes pas prioritaires
-selonles critères de la vague de vaccination en vigueur à ce moment.</p>
-
-<p>Ce sont les centres qui sélectionnent les volontaires selon des critères
-qui leur sont propres parmi lesquels géolocalisation, âge, vaccin disponible…</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose"
-            aria-expanded="false"
-            aria-controls="collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose">
-      Puis-je m’inscrire sur Covidliste si j’ai déjà reçu ma première dose ?
-    </button>
-  </h3>
-
-  <div id="collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose"
-       class="collapse p-3"
-       aria-labelledby="collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose"
-       data-parent="#accordion">
-    <p>Covidliste s’adresse à tous ceux qui cherchent une dose de vaccin (1ère, 2ème, rappel).</p>
-
-<p>Notre mission est de permettre à toutes les doses de vaccin disponibles d’être utilisées, en premier lieu
-par les publics prioritaires identifiés dans le cadre de la stratégie vaccinale
-du Gouvernement.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc"
-            aria-expanded="false"
-            aria-controls="collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc">
-      Comment inscrire deux adresses postales différentes (domicile, travail, etc.) ?
-    </button>
-  </h3>
-
-  <div id="collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc"
-       class="collapse p-3"
-       aria-labelledby="collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc"
-       data-parent="#accordion">
-    <p>À ce jour, Covidliste n’autorise qu’une adresse postale par compte.</p>
-
-  </div>
-</div>
-
-        <h2 class="mt-5 mb-2 h4">Fonctionnement</h2>
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-comment-fonctionne-la-selection-des-volontaires"
-            aria-expanded="false"
-            aria-controls="collapse-comment-fonctionne-la-selection-des-volontaires">
-      Comment fonctionne la sélection des volontaires ?
-    </button>
-  </h3>
-
-  <div id="collapse-comment-fonctionne-la-selection-des-volontaires"
-       class="collapse p-3"
-       aria-labelledby="collapse-comment-fonctionne-la-selection-des-volontaires"
-       data-parent="#accordion">
-    <p>Le centre de vaccination choisit, lors de la création de la campagne, les paramètres suivants :</p>
-
-<ul>
-  <li>la distance en km par rapport au centre de vaccination,</li>
-  <li>la tranche d’âge des volontaires,</li>
-  <li>le nombre de doses disponibles.</li>
-</ul>
-
-<p>Les volontaires sélectionné(e)s doivent remplir les critères suivants :</p>
-
-<ul>
-  <li>Le compte du volontaire doit être confirmé.</li>
-  <li>L’adresse déclarée par le volontaire doit se trouver à une distance inférieure à la distance choisie par le centre de vaccination.</li>
-  <li>L’âge déclaré du volontaire doit être dans la tranche d’âge choisie par le centre de vaccination.</li>
-  <li>Le volontaire ne doit pas avoir été contacté récemment.</li>
-</ul>
-
-<p>Les volontaires sélectionné(e)s sont ensuite ordonné(e)s pour optimiser nos chances d’avoir une réponse.</p>
-
-<p>Nous rentrons en contact avec chaque volontaire sélectionné(e) à hauteur des doses disponibles plus un facteur dit “d’overbooking” jusqu’à ce que toutes les doses disponibles soient réservées.</p>
-
-<p>Si vous êtes développeur, et que vous souhaitez consulter l’algorithme utilisé,
-celui-ci est disponible sur le
-<a target="_blank" rel="noopener" href="https://github.com/hostolab/covidliste">GitHub du projet</a>.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-par-quel-moyen-vais-je-etre-contacte"
-            aria-expanded="false"
-            aria-controls="collapse-par-quel-moyen-vais-je-etre-contacte">
-      Par quel moyen vais-je être contacté ?
-    </button>
-  </h3>
-
-  <div id="collapse-par-quel-moyen-vais-je-etre-contacte"
-       class="collapse p-3"
-       aria-labelledby="collapse-par-quel-moyen-vais-je-etre-contacte"
-       data-parent="#accordion">
-    <p>Si une dose de vaccin est disponible près de l’adresse que vous avez renseignée,
-nous vous enverrons un e-mail afin que vous puissiez confirmer votre disponibilité
-et réserver le vaccin.</p>
-
-<p>S’il reste des doses non attribuées à la fin de journée, nous vous recontacterons par SMS.</p>
-
-<p>Soyez donc le plus réactif possible dès que vous recevez un e-mail de notre part.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-comment-fonctionne-la-liste-d-attente"
-            aria-expanded="false"
-            aria-controls="collapse-comment-fonctionne-la-liste-d-attente">
-      Comment fonctionne la liste d’attente ?
-    </button>
-  </h3>
-
-  <div id="collapse-comment-fonctionne-la-liste-d-attente"
-       class="collapse p-3"
-       aria-labelledby="collapse-comment-fonctionne-la-liste-d-attente"
-       data-parent="#accordion">
-    <p>En cas de disponibilité d’une ou plusieurs doses, le professionnel de santé ou le
-lieu de vaccination inscrit nous indique les critères de sélection de volontaires
-qu’il souhaite tels que l’âge et la distance du lieu de vaccination.</p>
-
-<p>Nous sélectionnons alors des volontaires correspondant aux critères, auxquels
-nous enverrons un e-mail afin de connaître leur disponibilité.</p>
-
-<p>Lorsque la fin du créneau horaire choisi par le professionnel de santé approche
-et en cas de doses restantes, un SMS est alors envoyé aux volontaires correspondants.</p>
-
-<p>Si ils sont disponibles, nous leur transmettrons les informations nécessaires
-pour se rendre sur le lieu de vaccination.</p>
-
-<p>Si un des volontaires est indisponible ou ne répond pas dans le délai prévu,
-nous recommençons la selection avec un autre volontaire correspondant aux critères.</p>
-
-<p>Si vous êtes développeur, et que vous souhaitez consulter l’algorithme utilisé,
-celui-ci est disponible sur le
-<a target="_blank" rel="noopener" href="https://github.com/hostolab/covidliste">GitHub du projet</a>.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination"
-            aria-expanded="false"
-            aria-controls="collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination">
-      Je suis inscrit depuis plusieurs semaines et je n’ai jamais été contacté pour une vaccination.
-    </button>
-  </h3>
-
-  <div id="collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination"
-       data-parent="#accordion">
-    <p>Covidliste est un site de mise en relation en temps réel entre les établissements
-qui disposent de vaccins non utilisés et des volontaires cherchant un vaccin.
-Covidliste est complémentaire de la stratégie vaccinale actuelle et
-n’a pas vocation à s’y substituer.</p>
-
-<p>Covidliste ne recherche des volontaires qu’à la demande des professionnels
-de santé acteurs de la vaccination selon les critères établis par ces
-professionnels tels que l’âge et la distance du point de vaccination.</p>
-
-<p>Conformément à la stratégie de vaccination, les praticiens ne sont tenus de
-vacciner que les publics prioritaires. Une inscription via Covidliste ne permet
-pas de déroger à cette règle essentielle au bon déroulé de la campagne de vaccination
-et ne garantit donc pas de pouvoir bénéficier d’une dose non utilisée.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store"
-            aria-expanded="false"
-            aria-controls="collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store">
-      Avez-vous une application mobile pour smartphone sur l’Apple Store ou le Google Play Store ?
-    </button>
-  </h3>
-
-  <div id="collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store"
-       class="collapse p-3"
-       aria-labelledby="collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store"
-       data-parent="#accordion">
-    <p>À ce jour, Covidliste est uniquement un site internet et ne dispose pas d’application mobile.</p>
-
-<p>Nous ne prévoyons pas la création d’une application dans l’immédiat.</p>
-
-<p>Si une dose de vaccin est disponible, nous communiquerons avec vous par SMS et par e-mail.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer"
-            aria-expanded="false"
-            aria-controls="collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer">
-      J’ai une profession à risque ou une autre information utile me concernant, puis-je l’indiquer ?
-    </button>
-  </h3>
-
-  <div id="collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer"
-       class="collapse p-3"
-       aria-labelledby="collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer"
-       data-parent="#accordion">
-    <p>La plateforme Covidliste prend uniquement en charge la mise en relation entre des
-professionnels de santé acteurs de la vaccination et les volontaires en fonction
-de critères établis par ces professionnels tels que l’âge et la distance du
-point de vaccination.</p>
-
-<p>Nous ne récoltons pas d’informations personnelles supplémentaires en dehors
-de celles indiquées dans le formulaire d’inscription.</p>
-
-<p>Le centre de vaccination jugera de votre éligibilité en fonction du vaccin disponible.</p>
-
-<p>Au moment de la prise de contact, vous serez informé du type de vaccin.</p>
-
-<p>Nous vous invitons à lui faire part, à ce moment, de toutes les informations
-que vous jugerez nécessaires.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire"
-            aria-expanded="false"
-            aria-controls="collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire">
-      Je me suis fait vacciner et je veux me désinscrire.
-    </button>
-  </h3>
-
-  <div id="collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire"
-       data-parent="#accordion">
-    <p>Félicitations pour cette bonne nouvelle !</p>
-
-<p>Afin de vous désinscrire, connectez-vous sur votre
-<a href="/users/profile.html">espace personnel</a>
-puis cliquez sur « Supprimer mon compte ».</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin"
-            aria-expanded="false"
-            aria-controls="collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin">
-      Pourquoi ne puis-je plus me connecter avec le mot de passe choisi, en tant que volontaire cherchant un vaccin ?
-    </button>
-  </h3>
-
-  <div id="collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin"
-       class="collapse p-3"
-       aria-labelledby="collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin"
-       data-parent="#accordion">
-    <p>Toujours sensible à améliorer le niveau de sécurité de notre application, nous avons fait le choix de basculer la
-connexion des volontaires cherchant un vaccin sur un mode de connexion sans mot de passe.
-Ce mode se base sur l’envoi d’un e-mail sécurisé sur votre adresse personnelle. Cet e-mail contient un lien avec
-un code unique infalsifiable qui vous permettra, en le suivant, de vous connecter à l’application.</p>
-
-<p>Ce mode nous permet de déléguer la sécurité de votre connexion au fournisseur de mails dans lequel vous avez déjà placé votre confiance.</p>
-
-  </div>
-</div>
-
-        <h2 class="mt-5 mb-2 h4">Vaccins</h2>
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-quel-type-de-vaccin-va-t-on-m-administrer"
-            aria-expanded="false"
-            aria-controls="collapse-quel-type-de-vaccin-va-t-on-m-administrer">
-      Quel type de vaccin va-t-on m’administrer ?
-    </button>
-  </h3>
-
-  <div id="collapse-quel-type-de-vaccin-va-t-on-m-administrer"
-       class="collapse p-3"
-       aria-labelledby="collapse-quel-type-de-vaccin-va-t-on-m-administrer"
-       data-parent="#accordion">
-    <p>La plateforme Covidliste prend uniquement en charge la mise en relation entre
-des professionnels de santé acteurs de la vaccination et les volontaires en
-fonction de critères établis par ces professionnels tels que l’âge et la
-distance du point de vaccination.</p>
-
-<p>Le centre de vaccination jugera de votre éligibilité en fonction du vaccin disponible.</p>
-
-<p>Au moment de la prise de contact, vous serez informé du type de vaccin.</p>
-
-<p>Nous vous invitons à lui faire part, à ce moment, de toutes les informations
-que vous jugerez nécessaires.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir"
-            aria-expanded="false"
-            aria-controls="collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir">
-      J’ai une préférence pour un type de vaccin, puis-je choisir ?
-    </button>
-  </h3>
-
-  <div id="collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir"
-       class="collapse p-3"
-       aria-labelledby="collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir"
-       data-parent="#accordion">
-    <p>La plateforme Covidliste prend uniquement en charge la mise en relation entre
-des professionnels de santé acteurs de la vaccination et les volontaires en
-fonction de critères établis par ces professionnels tels que l’âge et la
-distance du point de vaccination.</p>
-
-<p>Le centre de vaccination jugera de votre éligibilité en fonction du vaccin disponible.</p>
-
-<p>Au moment de la prise de contact, vous serez informé du type de vaccin.</p>
-
-<p>Nous vous invitons à lui faire part, à ce moment, de toutes les informations
-que vous jugerez nécessaires.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer"
-            aria-expanded="false"
-            aria-controls="collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer">
-      J’ai une pathologie particulière qui m’interdit un type de vaccin, puis-je l’indiquer ?
-    </button>
-  </h3>
-
-  <div id="collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer"
-       class="collapse p-3"
-       aria-labelledby="collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer"
-       data-parent="#accordion">
-    <p>La plateforme Covidliste prend uniquement en charge la mise en relation entre des
-professionnels de santé acteurs de la vaccination et les volontaires en fonction
-de critères établis par ces professionnels tels que l’âge et la distance du
-point de vaccination.</p>
-
-<p>Nous ne récoltons pas d’information concernant les pathologies des volontaires.</p>
-
-<p>Le centre de vaccination jugera de votre éligibilité en fonction du vaccin disponible.</p>
-
-<p>Au moment de la prise de contact, vous serez informé du type de vaccin.</p>
-
-<p>Nous vous invitons à lui faire part, à ce moment, de toutes les informations
-que vous jugerez nécessaires.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-comment-va-se-passer-l-administration-de-la-seconde-dose"
-            aria-expanded="false"
-            aria-controls="collapse-comment-va-se-passer-l-administration-de-la-seconde-dose">
-      Comment va se passer l’administration de la seconde dose ?
-    </button>
-  </h3>
-
-  <div id="collapse-comment-va-se-passer-l-administration-de-la-seconde-dose"
-       class="collapse p-3"
-       aria-labelledby="collapse-comment-va-se-passer-l-administration-de-la-seconde-dose"
-       data-parent="#accordion">
-    <p>Covidliste prend uniquement en charge la mise en relation entre des volontaires
-et un professionnel de santé inscrit qui a des doses disponibles en surnombre.</p>
-
-<p>Une fois entré dans le protocole de vaccination, c’est le lieu de vaccination
-qui vous aura proposé la première dose qui suivra  votre dossier vaccinal.</p>
-
-  </div>
-</div>
-
-        <h2 class="mt-5 mb-2 h4">Lieux de vaccination</h2>
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits"
-            aria-expanded="false"
-            aria-controls="collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits">
-      Quels sont les professionnels de santé et lieux de vaccination inscrits ?
-    </button>
-  </h3>
-
-  <div id="collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits"
-       class="collapse p-3"
-       aria-labelledby="collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits"
-       data-parent="#accordion">
-    <p>L’équipe de Covidliste diffusera bientôt la liste des professionnels de santé et
-lieux de vaccination inscrits.</p>
-
-<p>L’initiative a été lancée en partenariat avec des centres pilotes en Île-de-France
-et se développe sur l’ensemble du territoire.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit"
-            aria-expanded="false"
-            aria-controls="collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit">
-      Comment savoir si le lieu de vaccination près de chez moi est inscrit ?
-    </button>
-  </h3>
-
-  <div id="collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit"
-       class="collapse p-3"
-       aria-labelledby="collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit"
-       data-parent="#accordion">
-    <p>L’équipe de Covidliste diffusera bientôt la liste des professionnels de santé
-et lieux de vaccination inscrits.</p>
-
-<p>En attendant, vous pouvez poser la question directement au professionnel ou
-au lieu de vaccination en question.</p>
-
-<p>Si ce n’est pas le cas, n’hésitez pas à leur expliquer le concept et les mettre
-en contact avec nous si ils ont des questions ou besoin d’accompagnement.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter"
-            aria-expanded="false"
-            aria-controls="collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter">
-      Puis-je choisir les centres susceptibles de me contacter ?
-    </button>
-  </h3>
-
-  <div id="collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter"
-       class="collapse p-3"
-       aria-labelledby="collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter"
-       data-parent="#accordion">
-    <p>La plateforme Covidliste permet aux centres de vaccination d’identifier et
-de contacter des volontaires à proximité afin d’écouler des surdoses qui
-risqueraient d’être détruites.</p>
-
-<p>Covidliste est complémentaire à la stratégie vaccinale actuelle et n’a pas
-vocation à s’y substituer.</p>
-
-  </div>
-</div>
-
-        <h2 class="mt-5 mb-2 h4">Données personnelles et code source</h2>
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees"
-            aria-expanded="false"
-            aria-controls="collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees">
-      Je me suis inscrit mais je souhaite modifier ou supprimer mes données ?
-    </button>
-  </h3>
-
-  <div id="collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees"
-       data-parent="#accordion">
-    <p>Afin de modifier ou supprimer vos données personnelles, connectez-vous sur votre
-<a href="/users/profile.html">espace personnel</a>.</p>
-
-<p>Si vous souhaitez modifier vos données : modifiez-les puis cliquez sur « Je modifie mes informations ».</p>
-
-<p>Si vous souhaitez supprimer vos données : cliquez sur « Supprimer mon compte ».</p>
-
-<p><a href="/cgu_volontaires.html">Pour en savoir plus sur l’exercice de vos droits sur vos données.</a></p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers"
-            aria-expanded="false"
-            aria-controls="collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers">
-      Comment être certain que les coordonnées transmises ne soient pas par la suite revendues à des tiers ?
-    </button>
-  </h3>
-
-  <div id="collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers"
-       class="collapse p-3"
-       aria-labelledby="collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers"
-       data-parent="#accordion">
-    <p>Covidliste est une initiative citoyenne et philanthrope portée par une équipe
-de plus de 100 bénévoles qui se sont rassemblés dans l’unique but de permettre
-à toutes les doses de vaccin disponibles d’être utilisées, en premier lieu par
-les publics prioritaires identifiés dans le cadre de la stratégie vaccinale
-du Gouvernement.</p>
-
-<p>Les données que vous renseignez ne sont transmises qu’aux centres de vaccination
-ou aux professionnels de santé proches de chez vous et disposant de doses
-de vaccins disponibles.</p>
-
-<p><a href="/cgu_volontaires.html">Pour en savoir plus sur l’utilisation de vos données.</a></p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription"
-            aria-expanded="false"
-            aria-controls="collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription">
-      À quoi servent les données demandées lors de l’inscription ?
-    </button>
-  </h3>
-
-  <div id="collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription"
-       class="collapse p-3"
-       aria-labelledby="collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription"
-       data-parent="#accordion">
-    <p>Lors de l’inscription sur Covidliste, nous demandons à l’utilisateur de
-nous confier certaines données personnelles.</p>
-
-<p>Nous ne demandons que les données strictement nécessaires à l’utilisation de
-la plateforme, rien de plus.</p>
-
-<p>Détails par donnée :</p>
-
-<ul>
-  <li>Le prénom est transmis au centre de vaccination pour identifier le volontaire lors de son arrivée au RDV.</li>
-  <li>Le nom est transmis au centre de vaccination pour identifier le volontaire lors de son arrivée au RDV.</li>
-  <li>La date de naissance est utilisée pour sélectionner des volontaires selon les critères d’age choisis par le centre de vaccination.</li>
-  <li>L’adresse est utilisée pour déterminer les autres champs de localisation et pour vous permettre de la vérifier ou la modifier dans l’espace membre.</li>
-  <li>La latitude est utilisée pour sélectionner des volontaires selon les critères de distance choisis par le centre de vaccination.</li>
-  <li>La longitude est utilisée pour sélectionner des volontaires selon les critères de distance choisis par le centre de vaccination.</li>
-  <li>Le code postal (déterminé à partir de l’adresse) est utilisé pour faire des analyses statistiques anonymisées.</li>
-  <li>Le code INSEE (déterminé à partir de l’adresse) est utilisé pour faire des analyses statistiques anonymisées.</li>
-  <li>La ville (déterminée à partir de l’adresse) est utilisée pour faire des analyses statistiques anonymisées.</li>
-  <li>Le département (déterminé à partir de l’adresse) est utilisé pour faire des analyses statistiques anonymisées.</li>
-  <li>Le numéro de téléphone est utilisé pour prévenir les volontaires par SMS qu’une dose est disponible.</li>
-  <li>L’adresse email est utilisée pour prévenir les volontaires par Email qu’une dose est disponible ainsi que pour se connecter à son compte.</li>
-  <li>Le mot de passe est utilisé pour se connecter à son compte.</li>
-</ul>
-
-<p>Les informations personnelles partagées avec les centres après validation du RDV par le volontaire sont :</p>
-
-<ul>
-  <li>Le prénom,</li>
-  <li>Le nom,</li>
-  <li>La date de naissance,</li>
-  <li>Le numéro de téléphone.</li>
-</ul>
-
-<p><a href="/cgu_volontaires.html">Pour en savoir plus sur l’utilisation de vos données.</a></p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-comment-sont-hebergees-mes-donnees"
-            aria-expanded="false"
-            aria-controls="collapse-comment-sont-hebergees-mes-donnees">
-      Comment sont hébergées mes données ?
-    </button>
-  </h3>
-
-  <div id="collapse-comment-sont-hebergees-mes-donnees"
-       class="collapse p-3"
-       aria-labelledby="collapse-comment-sont-hebergees-mes-donnees"
-       data-parent="#accordion">
-    <p>Vos données sont hébergées en France auprès du prestataire SCALINGO SAS.</p>
-
-<p>Lieu et choix de l’hébergeur : dans une volonté de souligner son attachement à des technologies françaises et de
-s’assurer de la conformité avec les législation en vigueur, COVIDLISTE a fait le choix d’héberger ses données en
-France via la société SCALINGO.</p>
-
-<p>Type de stockage utilisés :</p>
-
-<ul>
-  <li>La plupart des données personnelles (email, téléphone, nom/prénom (après confirmation d’un rendez-vous)) sont stockées et chiffrées dans notre base de données conformément à l’état de l’art.</li>
-  <li>La clé de chiffrement est stockée séparément, sur la plateforme d’hébergement du site, et n’est accessible que des gestionnaires de COVIDLISTE et de l’hébergeur pour des raisons techniques.</li>
-  <li>Certaines données personnelles sont stockées de manière non réversible à l’aide de <a target="_blank" rel="noopener" href="https://fr.wikipedia.org/wiki/Fonction_de_hachage">fonctions de hashage</a>.</li>
-  <li>Quelques données personnelles (localisation approximée, date de naissance) sont stockées en clair dans notre base de données.</li>
-  <li>Elles sont réduites au strict minimum et/ou sont volontairement imprécises.</li>
-</ul>
-
-<p>Blibliothèques techniques utilisées :</p>
-
-<ul>
-  <li>Pour le chiffrement des données, nous utilisons <a target="_blank" rel="noopener" href="https://github.com/ankane/lockbox">ankane/lockbox</a>.</li>
-  <li>Pour le hachage de l’adresse email, nous utilisons <a target="_blank" rel="noopener" href="https://github.com/ankane/blind_index">ankane/blind_index</a>.</li>
-  <li>Pour le hachage du mot de passe, nous utilisons les options de hachage par défaut proposées par <a target="_blank" rel="noopener" href="https://github.com/heartcombo/devise">heartcombo/devise</a>.</li>
-</ul>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel"
-            aria-expanded="false"
-            aria-controls="collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel">
-      Pourquoi mon nom n’apparaît-il plus dans mon espace personnel ?
-    </button>
-  </h3>
-
-  <div id="collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel"
-       class="collapse p-3"
-       aria-labelledby="collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel"
-       data-parent="#accordion">
-    <p>J’ai déjà fourni les informations de nom et prénom, pourquoi l’application me les redemande-t-elle pour confirmer mon rendez-vous ?</p>
-
-<p>Dans notre optique de respect de votre vie privée et pour augmenter le niveau de sécurité, nous revoyons régulièrement nos règles d’utilisation.
-Dans ce cadre, nous avons pris la décision de ne plus conserver les informations de nom et prénom des personnes inscrites sur CovidListe.</p>
-
-<p>Pour permettre la validation de votre identité, vous serez invité à renseigner ces informations lors de l’acceptation d’une proposition de vaccination.
-Soyez vigilant lors de la saisie de ces informations, le professionnel de santé les vérifiera ainsi que votre âge.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-votre-code-source-est-il-ouvert-et-auditable"
-            aria-expanded="false"
-            aria-controls="collapse-votre-code-source-est-il-ouvert-et-auditable">
-      Votre code source est-il ouvert et auditable ?
-    </button>
-  </h3>
-
-  <div id="collapse-votre-code-source-est-il-ouvert-et-auditable"
-       class="collapse p-3"
-       aria-labelledby="collapse-votre-code-source-est-il-ouvert-et-auditable"
-       data-parent="#accordion">
-    <p>Oui, notre code est open source et vous pouvez le retrouver sur le
-<a target="_blank" rel="noopener" href="https://github.com/hostolab/covidliste">GitHub du projet</a>.</p>
-
-  </div>
-</div>
-
-        <h2 class="mt-5 mb-2 h4">Centres de vaccination et professionnels de santé</h2>
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations"
-            aria-expanded="false"
-            aria-controls="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations">
-      Je suis un professionnel de santé en charge de la vaccination et je souhaite obtenir des informations.
-    </button>
-  </h3>
-
-  <div id="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations"
-       data-parent="#accordion">
-    <p>Consultez la
-<a href="/partenaires/faq.html">foire aux questions dédiée aux professionnels de santé</a>.</p>
-
-<p>Si vous avez besoin d’accompagnement, nous vous invitons à contacter
-<a href="mailto:partenaires@covidliste.com">partenaires@covidliste.com</a>.</p>
-
-  </div>
-</div>
-
-        <h2 class="mt-5 mb-2 h4">Collaboration et contact</h2>
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-veux-vous-aider-ou-devenir-benevole"
-            aria-expanded="false"
-            aria-controls="collapse-je-veux-vous-aider-ou-devenir-benevole">
-      Je veux vous aider ou devenir bénévole.
-    </button>
-  </h3>
-
-  <div id="collapse-je-veux-vous-aider-ou-devenir-benevole"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-veux-vous-aider-ou-devenir-benevole"
-       data-parent="#accordion">
-    <p>Merci beaucoup de vous proposer, cela nous fait très plaisir de voir que vous souhaitez nous apporter votre soutien !</p>
-
-<p>Nous vous invitons à consulter la <a href="/benevoles.html">page dédiée aux bénévoles</a>.</p>
-
-<p>Si vous êtes développeur, vous pouvez également apporter votre aide en collaborant sur
-<a target="_blank" rel="noopener" href="https://github.com/hostolab/covidliste">GitHub du projet</a>.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider"
-            aria-expanded="false"
-            aria-controls="collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider">
-      Je représente une entreprise ou une association et nous voulons vous aider.
-    </button>
-  </h3>
-
-  <div id="collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider"
-       data-parent="#accordion">
-    <p>Merci beaucoup de vous proposer, cela nous fait très plaisir de voir que vous des entreprises souhaitent nous apporter leur soutien !</p>
-
-<p>Nous essayons de travailler au maximum avec des entreprises ou associations françaises ou européennes.</p>
-
-<p>Si vous pensez pouvoir nous aider, vous pouvez nous contacter sur
-<a rel="noopener" href="mailto:hello@covidliste.com">hello@covidliste.com</a>.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations"
-            aria-expanded="false"
-            aria-controls="collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations">
-      Je suis journaliste et souhaite réaliser une interview ou obtenir des informations.
-    </button>
-  </h3>
-
-  <div id="collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations"
-       data-parent="#accordion">
-    <p>Nous vous invitons à nous contacter sur <a rel="noopener" href="mailto:presse@covidliste.com">presse@covidliste.com</a>.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question"
-            aria-expanded="false"
-            aria-controls="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question">
-      Je suis un professionnel de santé en charge de la vaccination et j’ai une question
-    </button>
-  </h3>
-
-  <div id="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question"
-       class="collapse p-3"
-       aria-labelledby="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question"
-       data-parent="#accordion">
-    <p>Nous avons développé une interface de gestion automatisée des volontaires à la vaccination.</p>
-
-<p>Afin de référencer votre centre et obtenir un accès à notre interface, vous pouvez
-<a href="/partenaires/inscription.html">vous inscrire</a>.</p>
-
-<p>Consultez la
-<a href="/partenaires/faq.html">foire aux questions dédiée aux professionnels de santé</a>.</p>
-
-<p>Si vous avez besoin d’accompagnement, nous vous invitons à contacter
-<a href="mailto:partenaires@covidliste.com">partenaires@covidliste.com</a>.</p>
-
-  </div>
-</div>
-
-          <div class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden" style="border-radius: 12px">
-  <h3 class="mb-0">
-    <button class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
-            data-toggle="collapse"
-            data-target="#collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter"
-            aria-expanded="false"
-            aria-controls="collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter">
-      J’ai une question qui n’est pas dans la FAQ ou je souhaite vous contacter.
-    </button>
-  </h3>
-
-  <div id="collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter"
-       class="collapse p-3"
-       aria-labelledby="collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter"
-       data-parent="#accordion">
-    <p>Nous sommes une équipe de bénévoles et nous recevons énormément de mails.</p>
-
-<p>Nous faisons le maximum pour vous répondre au plus vite.</p>
-
-<p>Pour éviter d’allonger les délais de réponse, vérifiez bien que la réponse à votre question n’est pas présente
-dans la Foire aux questions avant de nous contacter.</p>
-
-<p>Si ce n’est pas le cas, nous somme disponibles sur <a rel="noopener" href="mailto:hello@covidliste.com">hello@covidliste.com</a>.</p>
-
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </div>
-  <div class="layout__footer">
-    <footer class="navbar text-lg-start small px-0 shadow-lg navbar-dark bg-light">
-  <div class="container p-4">
-    <div class="row w-100">
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <div class="d-flex align-items-start mb-4">
-          <div class="h4 font-weight-bolder text-dark">Covidliste</div>
         </div>
-        <p class="text-dark" style="max-width: 400px">
-          Une initiative citoyenne portée par
-          des <a class="text-dark text-decoration-underline" href="/benevoles.html">bénévoles</a>
-          dans le but d'accélerer la campagne vaccinale contre la COVID-19 <strong>#aucunedoseperdue</strong>
-        </p>
-      </div>
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a class="text-dark d-inline-flex" href="/donateurs.html">Donateurs</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/sponsors.html">Sponsors</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/benevoles.html">Bénévoles</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="https://blog.covidliste.com/">Blog</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/presse.html">Presse</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/algorithme.html">Algorithme de sélection</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/faq.html">Foire aux questions</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <nav class="navbar navbar-expand-xl px-lg-0 navbar-dark bg-theme">
+          <div class="container">
+            <a class="navbar-brand" href="/">
+              <img
+                height="40"
+                width="32"
+                loading="lazy"
+                class="mr-2"
+                alt="logo covidliste"
+                src="/assets/covidliste-logo-1c771fa067965c5624376f9c3064eb6a1a08b3c0a91c36413747aaafba6d0b00.svg"
+              />
+              <span class="font-weight-bolder">Covidliste</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              data-target="#navbarNavDropdown"
+              data-toggle="collapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a class="text-dark d-inline-flex" href="/mentions_legales.html">Mentions légales</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/cookies.html">Politique cookies</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/cgu_volontaires.html">CGU - Volontaires non vaccinés</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/cgu_pro.html">CGU - Professionnels de santé</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/privacy_volontaires.html">Politique de protection des données personnelles - Volontaires non vaccinés</a>
-          </li>
-          <li>
-            <a class="text-dark mt-2 d-inline-flex" href="/privacy_pro.html">Politique de protection des données personnelles - Professionnels de santé</a>
-          </li>
-        </ul>
-      </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/faq.html">Foire aux questions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pro.html"
+                    >Professionnels de santé</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#dropdownHelpers"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Ils nous aident</a
+                  >
+                  <div class="dropdown-menu" aria-labelledby="dropdownHelpers">
+                    <a class="dropdown-item" href="/donateurs.html"
+                      >Donateurs</a
+                    >
+                    <a class="dropdown-item" href="/sponsors.html">Sponsors</a>
+                    <a class="dropdown-item" href="/benevoles.html"
+                      >Bénévoles</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-      <div class="col-lg-2 col-md-6 mt-3 mt-md-0">
-        <ul class="list-unstyled mb-0">
-          <li>
-            <i class="fab fa-github text-dark mr-2"></i>
-            <a class="text-dark d-inline-flex" target="_blank" rel="noopener" href="https://github.com/hostolab/covidliste">GitHub</a>
-          </li>
-          <li>
-            <i class="fab fa-twitter text-dark mr-2"></i>
-            <a class="text-dark mt-2 d-inline-flex" target="_blank" rel="noopener" href="https://twitter.com/covidliste">Twitter</a>
-          </li>
-           <li>
-            <i class="fab fa-facebook text-dark mr-2"></i>
-            <a class="text-dark mt-2 d-inline-flex" target="_blank" rel="noopener" href="https://www.facebook.com/covidliste">Facebook</a>
-          </li>
-           <li>
-            <i class="fab fa-instagram text-dark mr-2"></i>
-            <a class="text-dark mt-2 d-inline-flex" target="_blank" rel="noopener" href="https://www.instagram.com/covidliste/">Instagram</a>
-          </li>
-        </ul>
+        <div class="layout__content">
+          <div class="container" id="faq">
+            <div class="d-flex align-items-center mb-4">
+              <div class="rounded p-3 bg-light text-primary mr-3 h2">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <h3>Foire aux questions</h3>
+            </div>
+
+            <p>
+              Vous trouverez sur cette page un ensemble de réponses aux
+              questions les plus posées, regroupées par thème.
+            </p>
+
+            <p class="mb-4">
+              Si vous êtes un professionnel de santé assurant la vaccination,
+              consultez la
+              <a class="text-decoration-underline" href="/partenaires/faq.html"
+                >foire aux questions pour les professionnels de santé</a
+              >.
+            </p>
+
+            <div
+              id="fuzzy-search"
+              data-fuzzy-search-source="/faq.json"
+              data-fuzzy-search-input="#search"
+              data-fuzzy-search-none="#no-results"
+              data-fuzzy-search-item-category=".faq-category"
+              data-fuzzy-search-item=".faq-item"
+              data-fuzzy-search-item-title=".faq-item--title"
+            >
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Saisissez un mot-clé pour trouver votre réponse"
+                class="form-control string required"
+                autocomplete="off"
+              />
+              <div id="no-results" class="d-none alert alert-warning mt-2">
+                Nous n’avons pas trouvé de réponse avec ces mots clefs, merci de
+                reformuler votre demande.
+              </div>
+              <div id="accordion" class="d-flex flex-column">
+                <h2 class="mt-5 mb-2 h4">Inscription</h2>
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe"
+                    >
+                      Je n’ai pas reçu d’email de confirmation ou de changement
+                      de mot de passe.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-n-ai-pas-recu-d-email-de-confirmation-ou-de-changement-de-mot-de-passe"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Vérifiez que le mail n’est pas présent dans vos courriers
+                      indésirables, ou boîte <em>SPAM</em>.
+                    </p>
+
+                    <p>
+                      S’il n’est pas présent, vous pouvez faire une nouvelle
+                      demande
+                      <a href="/users/confirmation/new.html"
+                        >d’email de confirmation</a
+                      >.
+                    </p>
+
+                    <p>
+                      Attendez quelques minutes, vérifiez vos courriers
+                      indésirables ou boîte <em>SPAM</em>.
+                    </p>
+
+                    <p>
+                      Certains fournisseurs de mail peuvent parfois mettre en
+                      attente pendant plusieurs heures les emails nvoyés par
+                      Covidliste avant de les rendre disponibles dans votre
+                      boite. C’est le cas notemment de Yahoo et de Hotmail.
+                    </p>
+
+                    <p>
+                      Si vous souhaitez que le mail arrive plus rapidement, nous
+                      vous conseillons d’éviter l’utilisation des adresses de
+                      ces fournisseurs pour vous inscrire.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-peut-on-s-inscrire-a-deux-ou-plus"
+                      aria-expanded="false"
+                      aria-controls="collapse-peut-on-s-inscrire-a-deux-ou-plus"
+                    >
+                      Peut-on s’inscrire à deux (ou plus) ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-peut-on-s-inscrire-a-deux-ou-plus"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-peut-on-s-inscrire-a-deux-ou-plus"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Oui ! Chacun doit alors utiliser sa propre adresse email
+                      pour s’inscrire.
+                    </p>
+
+                    <p>
+                      À ce jour, Covidliste n’autorise qu’une inscription par
+                      adresse e-mail.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire"
+                    >
+                      Je ne suis pas prioritaire ou pas éligible au vaccin,
+                      puis-je tout de même m’inscrire ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-ne-suis-pas-prioritaire-ou-pas-eligible-au-vaccin-puis-je-tout-de-meme-m-inscrire"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Oui ! Covidliste est un outil d’ajustement de l’offre et
+                      de la demande qui a pour objectif d’éviter de perdre des
+                      doses de vaccins.
+                    </p>
+
+                    <p>
+                      Les centres pourront vous contacter même si vous n’êtes
+                      pas prioritaires selonles critères de la vague de
+                      vaccination en vigueur à ce moment.
+                    </p>
+
+                    <p>
+                      Ce sont les centres qui sélectionnent les volontaires
+                      selon des critères qui leur sont propres parmi lesquels
+                      géolocalisation, âge, vaccin disponible…
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose"
+                      aria-expanded="false"
+                      aria-controls="collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose"
+                    >
+                      Puis-je m’inscrire sur Covidliste si j’ai déjà reçu ma
+                      première dose ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-puis-je-m-inscrire-sur-covidliste-si-j-ai-deja-recu-ma-premiere-dose"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Covidliste s’adresse à tous ceux qui cherchent une dose de
+                      vaccin (1ère, 2ème, rappel).
+                    </p>
+
+                    <p>
+                      Notre mission est de permettre à toutes les doses de
+                      vaccin disponibles d’être utilisées, en premier lieu par
+                      les publics prioritaires identifiés dans le cadre de la
+                      stratégie vaccinale du Gouvernement.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc"
+                      aria-expanded="false"
+                      aria-controls="collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc"
+                    >
+                      Comment inscrire deux adresses postales différentes
+                      (domicile, travail, etc.) ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-comment-inscrire-deux-adresses-postales-differentes-domicile-travail-etc"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      À ce jour, Covidliste n’autorise qu’une adresse postale
+                      par compte.
+                    </p>
+                  </div>
+                </div>
+
+                <h2 class="mt-5 mb-2 h4">Fonctionnement</h2>
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-comment-fonctionne-la-selection-des-volontaires"
+                      aria-expanded="false"
+                      aria-controls="collapse-comment-fonctionne-la-selection-des-volontaires"
+                    >
+                      Comment fonctionne la sélection des volontaires ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-comment-fonctionne-la-selection-des-volontaires"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-comment-fonctionne-la-selection-des-volontaires"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Le centre de vaccination choisit, lors de la création de
+                      la campagne, les paramètres suivants :
+                    </p>
+
+                    <ul>
+                      <li>
+                        la distance en km par rapport au centre de vaccination,
+                      </li>
+                      <li>la tranche d’âge des volontaires,</li>
+                      <li>le nombre de doses disponibles.</li>
+                    </ul>
+
+                    <p>
+                      Les volontaires sélectionné(e)s doivent remplir les
+                      critères suivants :
+                    </p>
+
+                    <ul>
+                      <li>Le compte du volontaire doit être confirmé.</li>
+                      <li>
+                        L’adresse déclarée par le volontaire doit se trouver à
+                        une distance inférieure à la distance choisie par le
+                        centre de vaccination.
+                      </li>
+                      <li>
+                        L’âge déclaré du volontaire doit être dans la tranche
+                        d’âge choisie par le centre de vaccination.
+                      </li>
+                      <li>
+                        Le volontaire ne doit pas avoir été contacté récemment.
+                      </li>
+                    </ul>
+
+                    <p>
+                      Les volontaires sélectionné(e)s sont ensuite ordonné(e)s
+                      pour optimiser nos chances d’avoir une réponse.
+                    </p>
+
+                    <p>
+                      Nous rentrons en contact avec chaque volontaire
+                      sélectionné(e) à hauteur des doses disponibles plus un
+                      facteur dit “d’overbooking” jusqu’à ce que toutes les
+                      doses disponibles soient réservées.
+                    </p>
+
+                    <p>
+                      Si vous êtes développeur, et que vous souhaitez consulter
+                      l’algorithme utilisé, celui-ci est disponible sur le
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        href="https://github.com/hostolab/covidliste"
+                        >GitHub du projet</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-par-quel-moyen-vais-je-etre-contacte"
+                      aria-expanded="false"
+                      aria-controls="collapse-par-quel-moyen-vais-je-etre-contacte"
+                    >
+                      Par quel moyen vais-je être contacté ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-par-quel-moyen-vais-je-etre-contacte"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-par-quel-moyen-vais-je-etre-contacte"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Si une dose de vaccin est disponible près de l’adresse que
+                      vous avez renseignée, nous vous enverrons un e-mail afin
+                      que vous puissiez confirmer votre disponibilité et
+                      réserver le vaccin.
+                    </p>
+
+                    <p>
+                      S’il reste des doses non attribuées à la fin de journée,
+                      nous vous recontacterons par SMS.
+                    </p>
+
+                    <p>
+                      Soyez donc le plus réactif possible dès que vous recevez
+                      un e-mail de notre part.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-comment-fonctionne-la-liste-d-attente"
+                      aria-expanded="false"
+                      aria-controls="collapse-comment-fonctionne-la-liste-d-attente"
+                    >
+                      Comment fonctionne la liste d’attente ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-comment-fonctionne-la-liste-d-attente"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-comment-fonctionne-la-liste-d-attente"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      En cas de disponibilité d’une ou plusieurs doses, le
+                      professionnel de santé ou le lieu de vaccination inscrit
+                      nous indique les critères de sélection de volontaires
+                      qu’il souhaite tels que l’âge et la distance du lieu de
+                      vaccination.
+                    </p>
+
+                    <p>
+                      Nous sélectionnons alors des volontaires correspondant aux
+                      critères, auxquels nous enverrons un e-mail afin de
+                      connaître leur disponibilité.
+                    </p>
+
+                    <p>
+                      Lorsque la fin du créneau horaire choisi par le
+                      professionnel de santé approche et en cas de doses
+                      restantes, un SMS est alors envoyé aux volontaires
+                      correspondants.
+                    </p>
+
+                    <p>
+                      Si ils sont disponibles, nous leur transmettrons les
+                      informations nécessaires pour se rendre sur le lieu de
+                      vaccination.
+                    </p>
+
+                    <p>
+                      Si un des volontaires est indisponible ou ne répond pas
+                      dans le délai prévu, nous recommençons la selection avec
+                      un autre volontaire correspondant aux critères.
+                    </p>
+
+                    <p>
+                      Si vous êtes développeur, et que vous souhaitez consulter
+                      l’algorithme utilisé, celui-ci est disponible sur le
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        href="https://github.com/hostolab/covidliste"
+                        >GitHub du projet</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination"
+                    >
+                      Je suis inscrit depuis plusieurs semaines et je n’ai
+                      jamais été contacté pour une vaccination.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-suis-inscrit-depuis-plusieurs-semaines-et-je-n-ai-jamais-ete-contacte-pour-une-vaccination"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Covidliste est un site de mise en relation en temps réel
+                      entre les établissements qui disposent de vaccins non
+                      utilisés et des volontaires cherchant un vaccin.
+                      Covidliste est complémentaire de la stratégie vaccinale
+                      actuelle et n’a pas vocation à s’y substituer.
+                    </p>
+
+                    <p>
+                      Covidliste ne recherche des volontaires qu’à la demande
+                      des professionnels de santé acteurs de la vaccination
+                      selon les critères établis par ces professionnels tels que
+                      l’âge et la distance du point de vaccination.
+                    </p>
+
+                    <p>
+                      Conformément à la stratégie de vaccination, les praticiens
+                      ne sont tenus de vacciner que les publics prioritaires.
+                      Une inscription via Covidliste ne permet pas de déroger à
+                      cette règle essentielle au bon déroulé de la campagne de
+                      vaccination et ne garantit donc pas de pouvoir bénéficier
+                      d’une dose non utilisée.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store"
+                      aria-expanded="false"
+                      aria-controls="collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store"
+                    >
+                      Avez-vous une application mobile pour smartphone sur
+                      l’Apple Store ou le Google Play Store ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-avez-vous-une-application-mobile-pour-smartphone-sur-l-apple-store-ou-le-google-play-store"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      À ce jour, Covidliste est uniquement un site internet et
+                      ne dispose pas d’application mobile.
+                    </p>
+
+                    <p>
+                      Nous ne prévoyons pas la création d’une application dans
+                      l’immédiat.
+                    </p>
+
+                    <p>
+                      Si une dose de vaccin est disponible, nous communiquerons
+                      avec vous par SMS et par e-mail.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer"
+                      aria-expanded="false"
+                      aria-controls="collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer"
+                    >
+                      J’ai une profession à risque ou une autre information
+                      utile me concernant, puis-je l’indiquer ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-j-ai-une-profession-a-risque-ou-une-autre-information-utile-me-concernant-puis-je-l-indiquer"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      La plateforme Covidliste prend uniquement en charge la
+                      mise en relation entre des professionnels de santé acteurs
+                      de la vaccination et les volontaires en fonction de
+                      critères établis par ces professionnels tels que l’âge et
+                      la distance du point de vaccination.
+                    </p>
+
+                    <p>
+                      Nous ne récoltons pas d’informations personnelles
+                      supplémentaires en dehors de celles indiquées dans le
+                      formulaire d’inscription.
+                    </p>
+
+                    <p>
+                      Le centre de vaccination jugera de votre éligibilité en
+                      fonction du vaccin disponible.
+                    </p>
+
+                    <p>
+                      Au moment de la prise de contact, vous serez informé du
+                      type de vaccin.
+                    </p>
+
+                    <p>
+                      Nous vous invitons à lui faire part, à ce moment, de
+                      toutes les informations que vous jugerez nécessaires.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire"
+                    >
+                      Je me suis fait vacciner et je veux me désinscrire.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-me-suis-fait-vacciner-et-je-veux-me-desinscrire"
+                    data-parent="#accordion"
+                  >
+                    <p>Félicitations pour cette bonne nouvelle !</p>
+
+                    <p>
+                      Afin de vous désinscrire, connectez-vous sur votre
+                      <a href="/users/profile.html">espace personnel</a>
+                      puis cliquez sur « Supprimer mon compte ».
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin"
+                      aria-expanded="false"
+                      aria-controls="collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin"
+                    >
+                      Pourquoi ne puis-je plus me connecter avec le mot de passe
+                      choisi, en tant que volontaire cherchant un vaccin ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-pourquoi-ne-puis-je-plus-me-connecter-avec-le-mot-de-passe-choisi-en-tant-que-volontaire-cherchant-un-vaccin"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Toujours sensible à améliorer le niveau de sécurité de
+                      notre application, nous avons fait le choix de basculer la
+                      connexion des volontaires cherchant un vaccin sur un mode
+                      de connexion sans mot de passe. Ce mode se base sur
+                      l’envoi d’un e-mail sécurisé sur votre adresse
+                      personnelle. Cet e-mail contient un lien avec un code
+                      unique infalsifiable qui vous permettra, en le suivant, de
+                      vous connecter à l’application.
+                    </p>
+
+                    <p>
+                      Ce mode nous permet de déléguer la sécurité de votre
+                      connexion au fournisseur de mails dans lequel vous avez
+                      déjà placé votre confiance.
+                    </p>
+                  </div>
+                </div>
+
+                <h2 class="mt-5 mb-2 h4">Vaccins</h2>
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-quel-type-de-vaccin-va-t-on-m-administrer"
+                      aria-expanded="false"
+                      aria-controls="collapse-quel-type-de-vaccin-va-t-on-m-administrer"
+                    >
+                      Quel type de vaccin va-t-on m’administrer ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-quel-type-de-vaccin-va-t-on-m-administrer"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-quel-type-de-vaccin-va-t-on-m-administrer"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      La plateforme Covidliste prend uniquement en charge la
+                      mise en relation entre des professionnels de santé acteurs
+                      de la vaccination et les volontaires en fonction de
+                      critères établis par ces professionnels tels que l’âge et
+                      la distance du point de vaccination.
+                    </p>
+
+                    <p>
+                      Le centre de vaccination jugera de votre éligibilité en
+                      fonction du vaccin disponible.
+                    </p>
+
+                    <p>
+                      Au moment de la prise de contact, vous serez informé du
+                      type de vaccin.
+                    </p>
+
+                    <p>
+                      Nous vous invitons à lui faire part, à ce moment, de
+                      toutes les informations que vous jugerez nécessaires.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir"
+                      aria-expanded="false"
+                      aria-controls="collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir"
+                    >
+                      J’ai une préférence pour un type de vaccin, puis-je
+                      choisir ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-j-ai-une-preference-pour-un-type-de-vaccin-puis-je-choisir"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      La plateforme Covidliste prend uniquement en charge la
+                      mise en relation entre des professionnels de santé acteurs
+                      de la vaccination et les volontaires en fonction de
+                      critères établis par ces professionnels tels que l’âge et
+                      la distance du point de vaccination.
+                    </p>
+
+                    <p>
+                      Le centre de vaccination jugera de votre éligibilité en
+                      fonction du vaccin disponible.
+                    </p>
+
+                    <p>
+                      Au moment de la prise de contact, vous serez informé du
+                      type de vaccin.
+                    </p>
+
+                    <p>
+                      Nous vous invitons à lui faire part, à ce moment, de
+                      toutes les informations que vous jugerez nécessaires.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer"
+                      aria-expanded="false"
+                      aria-controls="collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer"
+                    >
+                      J’ai une pathologie particulière qui m’interdit un type de
+                      vaccin, puis-je l’indiquer ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-j-ai-une-pathologie-particuliere-qui-m-interdit-un-type-de-vaccin-puis-je-l-indiquer"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      La plateforme Covidliste prend uniquement en charge la
+                      mise en relation entre des professionnels de santé acteurs
+                      de la vaccination et les volontaires en fonction de
+                      critères établis par ces professionnels tels que l’âge et
+                      la distance du point de vaccination.
+                    </p>
+
+                    <p>
+                      Nous ne récoltons pas d’information concernant les
+                      pathologies des volontaires.
+                    </p>
+
+                    <p>
+                      Le centre de vaccination jugera de votre éligibilité en
+                      fonction du vaccin disponible.
+                    </p>
+
+                    <p>
+                      Au moment de la prise de contact, vous serez informé du
+                      type de vaccin.
+                    </p>
+
+                    <p>
+                      Nous vous invitons à lui faire part, à ce moment, de
+                      toutes les informations que vous jugerez nécessaires.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-comment-va-se-passer-l-administration-de-la-seconde-dose"
+                      aria-expanded="false"
+                      aria-controls="collapse-comment-va-se-passer-l-administration-de-la-seconde-dose"
+                    >
+                      Comment va se passer l’administration de la seconde dose ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-comment-va-se-passer-l-administration-de-la-seconde-dose"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-comment-va-se-passer-l-administration-de-la-seconde-dose"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Covidliste prend uniquement en charge la mise en relation
+                      entre des volontaires et un professionnel de santé inscrit
+                      qui a des doses disponibles en surnombre.
+                    </p>
+
+                    <p>
+                      Une fois entré dans le protocole de vaccination, c’est le
+                      lieu de vaccination qui vous aura proposé la première dose
+                      qui suivra votre dossier vaccinal.
+                    </p>
+                  </div>
+                </div>
+
+                <h2 class="mt-5 mb-2 h4">Lieux de vaccination</h2>
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits"
+                      aria-expanded="false"
+                      aria-controls="collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits"
+                    >
+                      Quels sont les professionnels de santé et lieux de
+                      vaccination inscrits ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-quels-sont-les-professionnels-de-sante-et-lieux-de-vaccination-inscrits"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      L’équipe de Covidliste diffusera bientôt la liste des
+                      professionnels de santé et lieux de vaccination inscrits.
+                    </p>
+
+                    <p>
+                      L’initiative a été lancée en partenariat avec des centres
+                      pilotes en Île-de-France et se développe sur l’ensemble du
+                      territoire.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit"
+                      aria-expanded="false"
+                      aria-controls="collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit"
+                    >
+                      Comment savoir si le lieu de vaccination près de chez moi
+                      est inscrit ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-comment-savoir-si-le-lieu-de-vaccination-pres-de-chez-moi-est-inscrit"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      L’équipe de Covidliste diffusera bientôt la liste des
+                      professionnels de santé et lieux de vaccination inscrits.
+                    </p>
+
+                    <p>
+                      En attendant, vous pouvez poser la question directement au
+                      professionnel ou au lieu de vaccination en question.
+                    </p>
+
+                    <p>
+                      Si ce n’est pas le cas, n’hésitez pas à leur expliquer le
+                      concept et les mettre en contact avec nous si ils ont des
+                      questions ou besoin d’accompagnement.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter"
+                      aria-expanded="false"
+                      aria-controls="collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter"
+                    >
+                      Puis-je choisir les centres susceptibles de me contacter ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-puis-je-choisir-les-centres-susceptibles-de-me-contacter"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      La plateforme Covidliste permet aux centres de vaccination
+                      d’identifier et de contacter des volontaires à proximité
+                      afin d’écouler des surdoses qui risqueraient d’être
+                      détruites.
+                    </p>
+
+                    <p>
+                      Covidliste est complémentaire à la stratégie vaccinale
+                      actuelle et n’a pas vocation à s’y substituer.
+                    </p>
+                  </div>
+                </div>
+
+                <h2 class="mt-5 mb-2 h4">
+                  Données personnelles et code source
+                </h2>
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees"
+                    >
+                      Je me suis inscrit mais je souhaite modifier ou supprimer
+                      mes données ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-me-suis-inscrit-mais-je-souhaite-modifier-ou-supprimer-mes-donnees"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Afin de modifier ou supprimer vos données personnelles,
+                      connectez-vous sur votre
+                      <a href="/users/profile.html">espace personnel</a>.
+                    </p>
+
+                    <p>
+                      Si vous souhaitez modifier vos données : modifiez-les puis
+                      cliquez sur « Je modifie mes informations ».
+                    </p>
+
+                    <p>
+                      Si vous souhaitez supprimer vos données : cliquez sur «
+                      Supprimer mon compte ».
+                    </p>
+
+                    <p>
+                      <a href="/cgu_volontaires.html"
+                        >Pour en savoir plus sur l’exercice de vos droits sur
+                        vos données.</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers"
+                      aria-expanded="false"
+                      aria-controls="collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers"
+                    >
+                      Comment être certain que les coordonnées transmises ne
+                      soient pas par la suite revendues à des tiers ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-comment-etre-certain-que-les-coordonnees-transmises-ne-soient-pas-par-la-suite-revendues-a-des-tiers"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Covidliste est une initiative citoyenne et philanthrope
+                      portée par une équipe de plus de 100 bénévoles qui se sont
+                      rassemblés dans l’unique but de permettre à toutes les
+                      doses de vaccin disponibles d’être utilisées, en premier
+                      lieu par les publics prioritaires identifiés dans le cadre
+                      de la stratégie vaccinale du Gouvernement.
+                    </p>
+
+                    <p>
+                      Les données que vous renseignez ne sont transmises qu’aux
+                      centres de vaccination ou aux professionnels de santé
+                      proches de chez vous et disposant de doses de vaccins
+                      disponibles.
+                    </p>
+
+                    <p>
+                      <a href="/cgu_volontaires.html"
+                        >Pour en savoir plus sur l’utilisation de vos
+                        données.</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription"
+                      aria-expanded="false"
+                      aria-controls="collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription"
+                    >
+                      À quoi servent les données demandées lors de l’inscription
+                      ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-a-quoi-servent-les-donnees-demandees-lors-de-l-inscription"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Lors de l’inscription sur Covidliste, nous demandons à
+                      l’utilisateur de nous confier certaines données
+                      personnelles.
+                    </p>
+
+                    <p>
+                      Nous ne demandons que les données strictement nécessaires
+                      à l’utilisation de la plateforme, rien de plus.
+                    </p>
+
+                    <p>Détails par donnée :</p>
+
+                    <ul>
+                      <li>
+                        Le prénom est transmis au centre de vaccination pour
+                        identifier le volontaire lors de son arrivée au RDV.
+                      </li>
+                      <li>
+                        Le nom est transmis au centre de vaccination pour
+                        identifier le volontaire lors de son arrivée au RDV.
+                      </li>
+                      <li>
+                        La date de naissance est utilisée pour sélectionner des
+                        volontaires selon les critères d’age choisis par le
+                        centre de vaccination.
+                      </li>
+                      <li>
+                        L’adresse est utilisée pour déterminer les autres champs
+                        de localisation et pour vous permettre de la vérifier ou
+                        la modifier dans l’espace membre.
+                      </li>
+                      <li>
+                        La latitude est utilisée pour sélectionner des
+                        volontaires selon les critères de distance choisis par
+                        le centre de vaccination.
+                      </li>
+                      <li>
+                        La longitude est utilisée pour sélectionner des
+                        volontaires selon les critères de distance choisis par
+                        le centre de vaccination.
+                      </li>
+                      <li>
+                        Le code postal (déterminé à partir de l’adresse) est
+                        utilisé pour faire des analyses statistiques
+                        anonymisées.
+                      </li>
+                      <li>
+                        Le code INSEE (déterminé à partir de l’adresse) est
+                        utilisé pour faire des analyses statistiques
+                        anonymisées.
+                      </li>
+                      <li>
+                        La ville (déterminée à partir de l’adresse) est utilisée
+                        pour faire des analyses statistiques anonymisées.
+                      </li>
+                      <li>
+                        Le département (déterminé à partir de l’adresse) est
+                        utilisé pour faire des analyses statistiques
+                        anonymisées.
+                      </li>
+                      <li>
+                        Le numéro de téléphone est utilisé pour prévenir les
+                        volontaires par SMS qu’une dose est disponible.
+                      </li>
+                      <li>
+                        L’adresse email est utilisée pour prévenir les
+                        volontaires par Email qu’une dose est disponible ainsi
+                        que pour se connecter à son compte.
+                      </li>
+                      <li>
+                        Le mot de passe est utilisé pour se connecter à son
+                        compte.
+                      </li>
+                    </ul>
+
+                    <p>
+                      Les informations personnelles partagées avec les centres
+                      après validation du RDV par le volontaire sont :
+                    </p>
+
+                    <ul>
+                      <li>Le prénom,</li>
+                      <li>Le nom,</li>
+                      <li>La date de naissance,</li>
+                      <li>Le numéro de téléphone.</li>
+                    </ul>
+
+                    <p>
+                      <a href="/cgu_volontaires.html"
+                        >Pour en savoir plus sur l’utilisation de vos
+                        données.</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-comment-sont-hebergees-mes-donnees"
+                      aria-expanded="false"
+                      aria-controls="collapse-comment-sont-hebergees-mes-donnees"
+                    >
+                      Comment sont hébergées mes données ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-comment-sont-hebergees-mes-donnees"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-comment-sont-hebergees-mes-donnees"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Vos données sont hébergées en France auprès du prestataire
+                      SCALINGO SAS.
+                    </p>
+
+                    <p>
+                      Lieu et choix de l’hébergeur : dans une volonté de
+                      souligner son attachement à des technologies françaises et
+                      de s’assurer de la conformité avec les législation en
+                      vigueur, COVIDLISTE a fait le choix d’héberger ses données
+                      en France via la société SCALINGO.
+                    </p>
+
+                    <p>Type de stockage utilisés :</p>
+
+                    <ul>
+                      <li>
+                        La plupart des données personnelles (email, téléphone,
+                        nom/prénom (après confirmation d’un rendez-vous)) sont
+                        stockées et chiffrées dans notre base de données
+                        conformément à l’état de l’art.
+                      </li>
+                      <li>
+                        La clé de chiffrement est stockée séparément, sur la
+                        plateforme d’hébergement du site, et n’est accessible
+                        que des gestionnaires de COVIDLISTE et de l’hébergeur
+                        pour des raisons techniques.
+                      </li>
+                      <li>
+                        Certaines données personnelles sont stockées de manière
+                        non réversible à l’aide de
+                        <a
+                          target="_blank"
+                          rel="noopener"
+                          href="https://fr.wikipedia.org/wiki/Fonction_de_hachage"
+                          >fonctions de hashage</a
+                        >.
+                      </li>
+                      <li>
+                        Quelques données personnelles (localisation approximée,
+                        date de naissance) sont stockées en clair dans notre
+                        base de données.
+                      </li>
+                      <li>
+                        Elles sont réduites au strict minimum et/ou sont
+                        volontairement imprécises.
+                      </li>
+                    </ul>
+
+                    <p>Blibliothèques techniques utilisées :</p>
+
+                    <ul>
+                      <li>
+                        Pour le chiffrement des données, nous utilisons
+                        <a
+                          target="_blank"
+                          rel="noopener"
+                          href="https://github.com/ankane/lockbox"
+                          >ankane/lockbox</a
+                        >.
+                      </li>
+                      <li>
+                        Pour le hachage de l’adresse email, nous utilisons
+                        <a
+                          target="_blank"
+                          rel="noopener"
+                          href="https://github.com/ankane/blind_index"
+                          >ankane/blind_index</a
+                        >.
+                      </li>
+                      <li>
+                        Pour le hachage du mot de passe, nous utilisons les
+                        options de hachage par défaut proposées par
+                        <a
+                          target="_blank"
+                          rel="noopener"
+                          href="https://github.com/heartcombo/devise"
+                          >heartcombo/devise</a
+                        >.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel"
+                      aria-expanded="false"
+                      aria-controls="collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel"
+                    >
+                      Pourquoi mon nom n’apparaît-il plus dans mon espace
+                      personnel ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-pourquoi-mon-nom-n-apparait-il-plus-dans-mon-espace-personnel"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      J’ai déjà fourni les informations de nom et prénom,
+                      pourquoi l’application me les redemande-t-elle pour
+                      confirmer mon rendez-vous ?
+                    </p>
+
+                    <p>
+                      Dans notre optique de respect de votre vie privée et pour
+                      augmenter le niveau de sécurité, nous revoyons
+                      régulièrement nos règles d’utilisation. Dans ce cadre,
+                      nous avons pris la décision de ne plus conserver les
+                      informations de nom et prénom des personnes inscrites sur
+                      CovidListe.
+                    </p>
+
+                    <p>
+                      Pour permettre la validation de votre identité, vous serez
+                      invité à renseigner ces informations lors de l’acceptation
+                      d’une proposition de vaccination. Soyez vigilant lors de
+                      la saisie de ces informations, le professionnel de santé
+                      les vérifiera ainsi que votre âge.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-votre-code-source-est-il-ouvert-et-auditable"
+                      aria-expanded="false"
+                      aria-controls="collapse-votre-code-source-est-il-ouvert-et-auditable"
+                    >
+                      Votre code source est-il ouvert et auditable ?
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-votre-code-source-est-il-ouvert-et-auditable"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-votre-code-source-est-il-ouvert-et-auditable"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Oui, notre code est open source et vous pouvez le
+                      retrouver sur le
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        href="https://github.com/hostolab/covidliste"
+                        >GitHub du projet</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <h2 class="mt-5 mb-2 h4">
+                  Centres de vaccination et professionnels de santé
+                </h2>
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations"
+                    >
+                      Je suis un professionnel de santé en charge de la
+                      vaccination et je souhaite obtenir des informations.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-je-souhaite-obtenir-des-informations"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Consultez la
+                      <a href="/partenaires/faq.html"
+                        >foire aux questions dédiée aux professionnels de
+                        santé</a
+                      >.
+                    </p>
+
+                    <p>
+                      Si vous avez besoin d’accompagnement, nous vous invitons à
+                      contacter
+                      <a href="mailto:partenaires@covidliste.com"
+                        >partenaires@covidliste.com</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <h2 class="mt-5 mb-2 h4">Collaboration et contact</h2>
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-veux-vous-aider-ou-devenir-benevole"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-veux-vous-aider-ou-devenir-benevole"
+                    >
+                      Je veux vous aider ou devenir bénévole.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-veux-vous-aider-ou-devenir-benevole"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-veux-vous-aider-ou-devenir-benevole"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Merci beaucoup de vous proposer, cela nous fait très
+                      plaisir de voir que vous souhaitez nous apporter votre
+                      soutien !
+                    </p>
+
+                    <p>
+                      Nous vous invitons à consulter la
+                      <a href="/benevoles.html">page dédiée aux bénévoles</a>.
+                    </p>
+
+                    <p>
+                      Si vous êtes développeur, vous pouvez également apporter
+                      votre aide en collaborant sur
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        href="https://github.com/hostolab/covidliste"
+                        >GitHub du projet</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider"
+                    >
+                      Je représente une entreprise ou une association et nous
+                      voulons vous aider.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-represente-une-entreprise-ou-une-association-et-nous-voulons-vous-aider"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Merci beaucoup de vous proposer, cela nous fait très
+                      plaisir de voir que vous des entreprises souhaitent nous
+                      apporter leur soutien !
+                    </p>
+
+                    <p>
+                      Nous essayons de travailler au maximum avec des
+                      entreprises ou associations françaises ou européennes.
+                    </p>
+
+                    <p>
+                      Si vous pensez pouvoir nous aider, vous pouvez nous
+                      contacter sur
+                      <a rel="noopener" href="mailto:hello@covidliste.com"
+                        >hello@covidliste.com</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations"
+                    >
+                      Je suis journaliste et souhaite réaliser une interview ou
+                      obtenir des informations.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-suis-journaliste-et-souhaite-realiser-une-interview-ou-obtenir-des-informations"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Nous vous invitons à nous contacter sur
+                      <a rel="noopener" href="mailto:presse@covidliste.com"
+                        >presse@covidliste.com</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question"
+                      aria-expanded="false"
+                      aria-controls="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question"
+                    >
+                      Je suis un professionnel de santé en charge de la
+                      vaccination et j’ai une question
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-je-suis-un-professionnel-de-sante-en-charge-de-la-vaccination-et-j-ai-une-question"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Nous avons développé une interface de gestion automatisée
+                      des volontaires à la vaccination.
+                    </p>
+
+                    <p>
+                      Afin de référencer votre centre et obtenir un accès à
+                      notre interface, vous pouvez
+                      <a href="/partenaires/inscription.html">vous inscrire</a>.
+                    </p>
+
+                    <p>
+                      Consultez la
+                      <a href="/partenaires/faq.html"
+                        >foire aux questions dédiée aux professionnels de
+                        santé</a
+                      >.
+                    </p>
+
+                    <p>
+                      Si vous avez besoin d’accompagnement, nous vous invitons à
+                      contacter
+                      <a href="mailto:partenaires@covidliste.com"
+                        >partenaires@covidliste.com</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-2 faq-item bg-white shadow-sm border border-light overflow-hidden"
+                  style="border-radius: 12px"
+                >
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed faq-item--title border-0 py-3 pl-3 pr-5"
+                      data-toggle="collapse"
+                      data-target="#collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter"
+                      aria-expanded="false"
+                      aria-controls="collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter"
+                    >
+                      J’ai une question qui n’est pas dans la FAQ ou je souhaite
+                      vous contacter.
+                    </button>
+                  </h3>
+
+                  <div
+                    id="collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter"
+                    class="collapse p-3"
+                    aria-labelledby="collapse-j-ai-une-question-qui-n-est-pas-dans-la-faq-ou-je-souhaite-vous-contacter"
+                    data-parent="#accordion"
+                  >
+                    <p>
+                      Nous sommes une équipe de bénévoles et nous recevons
+                      énormément de mails.
+                    </p>
+
+                    <p>
+                      Nous faisons le maximum pour vous répondre au plus vite.
+                    </p>
+
+                    <p>
+                      Pour éviter d’allonger les délais de réponse, vérifiez
+                      bien que la réponse à votre question n’est pas présente
+                      dans la Foire aux questions avant de nous contacter.
+                    </p>
+
+                    <p>
+                      Si ce n’est pas le cas, nous somme disponibles sur
+                      <a rel="noopener" href="mailto:hello@covidliste.com"
+                        >hello@covidliste.com</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout__footer">
+        <footer
+          class="navbar text-lg-start small px-0 shadow-lg navbar-dark bg-light"
+        >
+          <div class="container p-4">
+            <div class="row w-100">
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <div class="d-flex align-items-start mb-4">
+                  <div class="h4 font-weight-bolder text-dark">Covidliste</div>
+                </div>
+                <p class="text-dark" style="max-width: 400px">
+                  Une initiative citoyenne portée par des
+                  <a
+                    class="text-dark text-decoration-underline"
+                    href="/benevoles.html"
+                    >bénévoles</a
+                  >
+                  dans le but d'accélerer la campagne vaccinale contre la
+                  COVID-19 <strong>#aucunedoseperdue</strong>
+                </p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="text-dark d-inline-flex" href="/donateurs.html"
+                      >Donateurs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      href="/sponsors.html"
+                      >Sponsors</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      href="/benevoles.html"
+                      >Bénévoles</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      href="https://blog.covidliste.com/"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-dark mt-2 d-inline-flex" href="/presse.html"
+                      >Presse</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      href="/algorithme.html"
+                      >Algorithme de sélection</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-dark mt-2 d-inline-flex" href="/faq.html"
+                      >Foire aux questions</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-dark mt-2 d-inline-flex" href="/contact.html"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a
+                      class="text-dark d-inline-flex"
+                      href="/mentions_legales.html"
+                      >Mentions légales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-dark mt-2 d-inline-flex" href="/cookies.html"
+                      >Politique cookies</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      href="/cgu_volontaires.html"
+                      >CGU - Volontaires non vaccinés</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-dark mt-2 d-inline-flex" href="/cgu_pro.html"
+                      >CGU - Professionnels de santé</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      href="/privacy_volontaires.html"
+                      >Politique de protection des données personnelles -
+                      Volontaires non vaccinés</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      href="/privacy_pro.html"
+                      >Politique de protection des données personnelles -
+                      Professionnels de santé</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-2 col-md-6 mt-3 mt-md-0">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <i class="fab fa-github text-dark mr-2"></i>
+                    <a
+                      class="text-dark d-inline-flex"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://github.com/hostolab/covidliste"
+                      >GitHub</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fab fa-twitter text-dark mr-2"></i>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://twitter.com/covidliste"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fab fa-facebook text-dark mr-2"></i>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://www.facebook.com/covidliste"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fab fa-instagram text-dark mr-2"></i>
+                    <a
+                      class="text-dark mt-2 d-inline-flex"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://www.instagram.com/covidliste/"
+                      >Instagram</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
-  </div>
-</footer>
 
-  </div>
-</div>
-
-<script async type="text/javascript" id="mini-profiler" src="/mini-profiler-resources/includes.js?v=8cccf9fed3d62814b1d70f252554501b" data-css-url="/mini-profiler-resources/includes.css?v=8cccf9fed3d62814b1d70f252554501b" data-version="8cccf9fed3d62814b1d70f252554501b" data-path="/mini-profiler-resources/" data-current-id="7q8e6vkdhr2ztvn9njiu" data-ids="7q8e6vkdhr2ztvn9njiu,krzjuna5vta9uob6td3i,elob8r5ovvxpqbablew5,bsrspbeetonl54rjjylt,qsdlv5md0zhskbk3f65d,i1gqlj34fmqymzin1z6v,lmr7rbctxe1sv7zj4k2u,p4vs9mymplyo5r0cuk7b,tay0akvbpp4yr6aydj2o,urcuu1mnma9fl6y3hfp7,8wbbg9wdkk73dnlx46jl,f4sxnjerikg82w7evcos,71mxzkuicqhlvtize2v,sbp21icnsr3el4j7f643,x6bzvkl4mh5g6yiqczdg,ec6d3iif4paad0rs9k1f,gkhes1er42b1h18e3arq,yimggomhu7py3zrq0nrx,52pioccu2z3ifnz0f0vs,3fd6x3cpdjdc2wjxcfmh" data-horizontal-position="left" data-vertical-position="top" data-trivial="false" data-children="false" data-max-traces="20" data-controls="false" data-total-sql-count="false" data-authorized="true" data-toggle-shortcut="alt+p" data-start-hidden="false" data-collapse-results="true" data-html-container="body" data-hidden-custom-fields=""></script>
-</body>
+    <script
+      async
+      type="text/javascript"
+      id="mini-profiler"
+      src="/mini-profiler-resources/includes.js?v=8cccf9fed3d62814b1d70f252554501b"
+      data-css-url="/mini-profiler-resources/includes.css?v=8cccf9fed3d62814b1d70f252554501b"
+      data-version="8cccf9fed3d62814b1d70f252554501b"
+      data-path="/mini-profiler-resources/"
+      data-current-id="7q8e6vkdhr2ztvn9njiu"
+      data-ids="7q8e6vkdhr2ztvn9njiu,krzjuna5vta9uob6td3i,elob8r5ovvxpqbablew5,bsrspbeetonl54rjjylt,qsdlv5md0zhskbk3f65d,i1gqlj34fmqymzin1z6v,lmr7rbctxe1sv7zj4k2u,p4vs9mymplyo5r0cuk7b,tay0akvbpp4yr6aydj2o,urcuu1mnma9fl6y3hfp7,8wbbg9wdkk73dnlx46jl,f4sxnjerikg82w7evcos,71mxzkuicqhlvtize2v,sbp21icnsr3el4j7f643,x6bzvkl4mh5g6yiqczdg,ec6d3iif4paad0rs9k1f,gkhes1er42b1h18e3arq,yimggomhu7py3zrq0nrx,52pioccu2z3ifnz0f0vs,3fd6x3cpdjdc2wjxcfmh"
+      data-horizontal-position="left"
+      data-vertical-position="top"
+      data-trivial="false"
+      data-children="false"
+      data-max-traces="20"
+      data-controls="false"
+      data-total-sql-count="false"
+      data-authorized="true"
+      data-toggle-shortcut="alt+p"
+      data-start-hidden="false"
+      data-collapse-results="true"
+      data-html-container="body"
+      data-hidden-custom-fields=""
+    ></script>
+  </body>
 </html>
